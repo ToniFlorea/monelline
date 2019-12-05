@@ -20,9 +20,7 @@
                         </p> -->
                     </div>
                 </div>
-
             </div>
-
         </li>
     </ul>
 </section>

@@ -1,4 +1,4 @@
-<div class="nav-container">
+{{-- <div class="nav-container"> --}}
     <nav class="bg-dark">
         <div class="nav-bar text-center">
             <div class="col-md-2 col-md-push-5 col-sm-12 text-center">
@@ -28,4 +28,4 @@
             <i class="ti-menu"></i>
         </div>
     </nav>
-</div>
+{{-- </div> --}}
