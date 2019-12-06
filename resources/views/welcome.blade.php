@@ -2,48 +2,41 @@
 
 @section('content')
 <!-- SLIDER -->
-<section class="cover fullscreen image-slider slider-arrow-controls controls-inside parallax">
+
+<section class="cover fullscreen image-slider slider-arrow-controls kenburns">
     <ul class="slides">
-        <li class="overlay image-bg">
+        <li class="image-bg pt-xs-240 pb-xs-240">
             <div class="background-image-holder">
                 <img alt="image" class="background-image" src="{{asset('storage/img/banner-pagina-principala-1.jpg')}}">
             </div>
-            <div class="container v-align-transform">
+            <div class="align-bottom">
                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
-                        <img alt="Logo" class="mb8" src="{{asset('storage/img/Logo_LM.svg')}}">
-                        <h6 class="uppercase mb32">High Quality Italian Pasta</h6>
-                        <!-- <p class="text-justify mb0">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p> -->
+                    <div class="col-sm-12">
+                        <hr class="mb24">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs mb-xs-24">
+                        <h3 class="uppercase mb0 bold text-primary">Le Monelline</h3>
+                        <h5 class="text-white">High Quality Italian Pasta</h5>
+                    </div>
+                    <div class="col-md-4 hidden-sm hidden-xs">
+
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-12 text-right text-center-xs">
+                        <a class="btn btn btn-primary mt16" href="#">Oferta Saptamanii</a>
+                    </div>
+                </div>
+
             </div>
+
         </li>
     </ul>
 </section>
 
-<!-- SPECIAL OFFER -->
-<div class="bg-primary weekly-offer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h3 class="mb0 mt-20 inline-block p32 p0-xs">Oferta saptamanii la Le Monelline!&nbsp;</h3>
-                <a class="btn btn-lg btn-white mt-xs-24 mt-2" href="https://www.facebook.com/lemonelline.official/">Vezi
-                    oferta</a>
-            </div>
-        </div>
-
-    </div>
-</div>
-
 <!-- IMAGE GALLERY -->
 <section class="projects pt48">
     <div class="container">
-
-
         <div class="row masonry-loader">
             <div class="col-sm-12 text-center">
                 <div class="spinner"></div>
@@ -130,9 +123,7 @@
                 <h3 class="uppercase mb0">Unde ne găsești?</h3>
             </div>
         </div>
-
     </div>
-
 
 </section>
 <section class="p0">

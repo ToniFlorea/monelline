@@ -1,23 +1,25 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
+
+<section class="cover fullscreen image-slider slider-arrow-controls kenburns">
     <ul class="slides">
-        <li class="overlay image-bg">
+        <li class="image-bg pt-xs-240 pb-xs-240">
             <div class="background-image-holder">
                 <img alt="image" class="background-image" src="{{asset('storage/img/about-us-cover.jpg')}}">
             </div>
-            <div class="container v-align-transform">
+            <div class="align-bottom">
                 <div class="row">
-                    <div class="col-md-6 col-sm-8">
-                        <h1 class="mb40 mb-xs-16 large">Despre noi
-                        </h1>
-                        <h6 class="uppercase mb16">Echipa Le Monelline</h6>
-                        <p class="lead mb40">
-                            Afla mai multe despre echipa noastra si ce reprezinta
-                            <br>pentru noi Le Monelline.
-                        </p>
+                    <div class="col-sm-12">
+                        <hr class="mb24">
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 text-center-xs mb-xs-24">
+                        <h3 class="uppercase mb0 bold text-primary">Despre noi</h3>
+                        <h5 class="text-white">Afla mai multe despre echipa noastra si <br>ce reprezinta  pentru noi Le Monelline.</h5>
+                    </div>
+
                 </div>
 
             </div>
@@ -25,6 +27,7 @@
         </li>
     </ul>
 </section>
+
 <section>
     <div class="container">
         <div class="row">
@@ -33,7 +36,6 @@
                     <img alt="Pic" src="{{asset('storage/img/Mauro.jpg')}}">
                     <div class="title mb16">
                         <h5 class="uppercase mb0">Mauro</h5>
-                        <span>Creative Director</span>
                     </div>
                     <p class="mb0">
                         ”Mă numesc Mauro Monelli și sunt pasionat de mâncarea gourmet! Rețetele noastre de paste făcute
@@ -51,7 +53,6 @@
                     <img alt="Pic" src="{{asset('storage/img/Tunde.jpg')}}">
                     <div class="title mb16">
                         <h5 class="uppercase mb0">Tunde</h5>
-                        <span>iOS Developer</span>
                     </div>
                     <p class="mb0">
                         ”Mă numesc Tunde și vă invităm să încercați pastele noastre gourmet făcute în casă, ce îmbină
@@ -69,7 +70,6 @@
                     <img alt="Pic" src="{{asset('storage/img/Radu.jpg')}}">
                     <div class="title mb16">
                         <h5 class="uppercase mb0">Radu</h5>
-                        <span>Brand Director</span>
                     </div>
                     <p class="mb0">
                         ”Toate produsele noastre sunt de o calitate excelentă, artizanale, din ingrediente naturale, de

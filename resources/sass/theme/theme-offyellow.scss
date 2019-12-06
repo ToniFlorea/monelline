@@ -3646,11 +3646,11 @@ img {
 }
 .cover h1,
 .cover h2,
-.cover h3,
-.cover h4,
-.cover h5,
-.cover h6 {
-  color: #ffffff;
+.cover h3
+ {
+  color: $primary-color !important;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .cover p,
 .cover span,
@@ -3691,7 +3691,7 @@ img {
 }
 .cover .align-bottom {
   padding: 0 32px;
-  bottom: 16px;
+  bottom: 110px;
 }
 .cover .align-top {
   padding: 0 32px;
