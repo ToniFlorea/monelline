@@ -13,6 +13,8 @@
 
 Auth::routes();
 
+Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
+
 Route::get('/', 'PagesController@welcome');
 Route::get('/faq', 'PagesController@faq');
 Route::get('/contact', 'PagesController@contact');

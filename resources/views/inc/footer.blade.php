@@ -10,13 +10,13 @@
         <div class="row mb64 mb-xs-24">
             <div class="col-md-3 col-sm-4">
                 <ul>
-                    <li><a href="/">
+                    <li><a href="{{url('/')}}">
                             <h5 class="uppercase mb16 fade-on-hover">Acasa</h5>
                         </a></li>
-                    <li><a href="about-us">
+                    <li><a href="{{url('/about-us')}}">
                             <h5 class="uppercase mb16 fade-on-hover">Despre noi</h5>
                         </a></li>
-                    <li><a href="menu">
+                    <li><a href="{{url('/meniu')}}">
                             <h5 class="uppercase mb16 fade-on-hover">Meniu</h5>
                         </a></li>
                 </ul>
@@ -24,10 +24,10 @@
 
             <div class="col-md-3 col-sm-4">
                 <ul>
-                    <li><a href="contact">
+                    <li><a href="{{url('/contact')}}">
                             <h5 class="uppercase mb16 fade-on-hover">Contact</h5>
                         </a></li>
-                    <li><a href="faq">
+                    <li><a href="{{url('/faq')}}">
                             <h5 class="uppercase mb16 fade-on-hover">FAQ</h5>
                         </a></li>
                 </ul>

@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'login' => 'Login',
-    'register' => 'Register'
+    'failed' => 'Aceste date nu se potrivesc cu baza noastră de date.',
+    'throttle' => 'Prea multe incercari. Vă rugam așteptați :seconds secunde.',
+    'login' => 'Autentificare',
+    'register' => 'Înregistrare'
 
 ];
