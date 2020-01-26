@@ -4,6 +4,6 @@ return [
 
     'menu' => 'Menu',
     'about' => 'About us',
-    'contact' => 'Contact'
-
+    'contact' => 'Contact',
+    'order' => 'Order'
 ];

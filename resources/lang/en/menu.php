@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'Menu' => 'MENU',
+    'Our products' => 'Our Products',
+    'Menu Title 1' => 'We prepare ',
+    'Menu Title 2' => 'only high quality products',
+    'Menu Intro' => 'Anyone who knows the taste of homemade pasta will surely appreciate the premium quality of our handmade pasta. Pasta with fresh egg, kneaded with simple ingredients - flour, egg and lots of love, boiled just as it should, is enhanced by the most suitable sauces, classic or modern.',
+    'Monelline Nere' => 'Black Monelline',
+    'Nere Desc' => 'with italian citrus sauce. (200 gr)',
+    'Tortelinii Traditionali De Carne' => 'Traditional meat tortellini',
+    'Desc Carne 1' => 'with parmesan reggiano cream matured for 36 months. (220 gr)',
+    'Desc Carne 2' => 'with traditional meat ragu. (240 gr)',
+    'Desc Carne 3' => 'with sour cream and prosciutto crudo sauce (220 gr)',
+    'Tortelinii Cu Dovleac Dulce' => 'Pumpkin filled tortelloni',
+    'Desc Dovleac 1' => 'with parmesan reggiano cheese matured for 36 months. (220 gr)',
+    'Desc Dovleac 2' => 'with traditional meat ragu. (260 gr)',
+    'Desc Dovleac 3' => 'with melted butter and sage. (200 gr)',
+    'Tortelinii Cu Ricotta Și Spanac' => 'Tortelloni with ricotta and spinach filling',
+    'Desc Spanac 1' => 'and reggiano parmesan cheese matured for 36 months. (220 gr)',
+    'Desc Spanac 2' => 'cooked in vecchia modena style. (220 gr)',
+    'Desc Spanac 3' => 'in melted butter sauce and sage. (240 gr)',
+    'Tagliatelle Emiliane' => 'Tagliatelle Emiliane',
+    'Desc Emiliane 1' => 'with traditional meat ragu. (235 gr)',
+    'Desc Emiliane 2' => 'with tomatoes and basil. (235 gr)',
+    'Desc Emiliane 3' => 'with shrimps, tomatoes and zucchini. (215 gr)',
+    'Gnocchi De Cartofi' => 'Potato gnocchi',
+    'Desc Gnocchi 1' => 'with matured gorgonzola cream and nuts. (280 gr)',
+    'Desc Gnocchi 2' => 'with tomatoes and basil. (260 gr)',
+    'Desc Gnocchi 3' => 'with traditional meat ragu. (270 gr)'
+];

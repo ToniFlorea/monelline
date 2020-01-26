@@ -4,6 +4,6 @@ return [
 
     'menu' => 'Meniu',
     'about' => 'Despre noi',
-    'contact' => 'Contact'
-
+    'contact' => 'Contact',
+    'order' => 'Comandă'
 ];

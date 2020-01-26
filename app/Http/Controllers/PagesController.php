@@ -25,4 +25,9 @@ class PagesController extends Controller
     {
         return view('faq');
     }
+
+    public function menu()
+    {
+        return view('menu');
+    }
 }

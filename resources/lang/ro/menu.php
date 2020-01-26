@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'Menu' => 'MENIU',
+    'Our products' => 'Produsele Noastre',
+    'Menu Title 1' => 'Preparam numai',
+    'Menu Title 2' => 'produse de calitate înaltă',
+    'Menu Intro' => 'Cine cunoaște gustul pastelor făcute în casa va aprecia cu siguranță calitatea premium a pastelor noastre artizanale. Pasta cu ou proaspătă, frământată din ingrediente simple – faina, ou și multă dragoste, fiartă exact cât trebuie, este pusă în valoare de cele mai potrivite sosuri, clasice sau moderne.',
+    'Monelline Nere' => 'Monelline Nere',
+    'Nere Desc' => 'cu somon și sos de citrice. (200 gr)',
+    'Tortelinii Traditionali De Carne' => 'Tortelinii Traditionali De Carne',
+    'Desc Carne 1' => 'cu cremă de parmezan reggiano maturat 36 de luni. (220 gr)',
+    'Desc Carne 2' => 'cu ragu tradițional de carne. (240 gr)',
+    'Desc Carne 3' => 'cu sos de smântână și prosciutto crudo. (220 gr)',
+    'Tortelinii Cu Dovleac Dulce' => 'Tortelinii Cu Dovleac Dulce',
+    'Desc Dovleac 1' => 'și cremă de parmezan reggiano maturat 36 de luni. (220 gr)',
+    'Desc Dovleac 2' => 'și ragu tradițional de carne. (260 gr)',
+    'Desc Dovleac 3' => 'condimentați cu unt topit și salvie. (200 gr)',
+    'Tortelinii Cu Ricotta Și Spanac' => 'Tortelinii Cu Ricotta Și Spanac',
+    'Desc Spanac 1' => 'și cremă de parmezan reggiano maturat 36 de luni. (220 gr)',
+    'Desc Spanac 2' => 'condimentați cu unt topit și salvie. (220 gr)',
+    'Desc Spanac 3' => 'condimentați în stil vecchia modena. (240 gr)',
+    'Tagliatelle Emiliane' => 'Tagliatelle Emiliane',
+    'Desc Emiliane 1' => 'cu ragu tradițional de carne. (235 gr)',
+    'Desc Emiliane 2' => 'cu roșii și busuioc. (235 gr)',
+    'Desc Emiliane 3' => 'cu sos de creveți, zucchine și șofran. (215 gr)',
+    'Gnocchi De Cartofi' => 'Gnocchi De Cartofi',
+    'Desc Gnocchi 1' => 'cu cremă de gorgonzola naturată și nuci. (280 gr)',
+    'Desc Gnocchi 2' => 'cu roșii și busuioc. (260 gr)',
+    'Desc Gnocchi 3' => 'cu ragu tradițional de carne. (270 gr)'
+];

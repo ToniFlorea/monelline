@@ -21,3 +21,4 @@ Route::get('/contact', 'PagesController@contact');
 Route::get('/about-us', 'PagesController@about');
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/menu', 'PagesController@menu');

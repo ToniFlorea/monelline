@@ -24,7 +24,7 @@
 
                     </div>
                     <div class="col-md-5 col-sm-6 col-xs-12 text-right text-center-xs">
-                        <a class="btn btn btn-primary mt16" href="#">Oferta Saptamanii</a>
+                        <a class="btn btn btn-primary mt16" href="#">@lang('welcome.offer')</a>
                     </div>
                 </div>
 
@@ -48,7 +48,7 @@
                     <a href="#">
                         <img alt="Pic" src="{{asset('storage/img/portrait-1.jpg')}}">
                         <div class="title">
-                            <h5 class="uppercase mb0">Preparat 1</h5>
+                            <h5 class="uppercase mb0">@lang('welcome.food1')</h5>
                             <span>Categorie</span>
                         </div>
                     </a>
@@ -60,7 +60,7 @@
                     <a href="#">
                         <img alt="Pic" src="{{asset('storage/img/portrait-2.jpg')}}">
                         <div class="title">
-                            <h5 class="uppercase mb0">Preparat 1</h5>
+                            <h5 class="uppercase mb0">@lang('welcome.food2')</h5>
                             <span>Categorie</span>
                         </div>
                     </a>
@@ -71,7 +71,7 @@
                     <a href="#">
                         <img alt="Pic" src="{{asset('storage/img/landscape-1.jpg')}}">
                         <div class="title">
-                            <h5 class="uppercase mb0">Preparat 1</h5>
+                            <h5 class="uppercase mb0">@lang('welcome.food3')</h5>
                             <span>Categorie</span>
                         </div>
                     </a>
@@ -82,7 +82,7 @@
                     <a href="#">
                         <img alt="Pic" src="{{asset('storage/img/portrait-3.jpg')}}">
                         <div class="title">
-                            <h5 class="uppercase mb0">Preparat 1</h5>
+                            <h5 class="uppercase mb0">@lang('welcome.food4')</h5>
                             <span>Categorie</span>
                         </div>
                     </a>
@@ -93,7 +93,7 @@
                     <a href="#">
                         <img alt="Pic" src="{{asset('storage/img/landscape-2.jpg')}}">
                         <div class="title">
-                            <h5 class="uppercase mb0">Preparat 1</h5>
+                            <h5 class="uppercase mb0">@lang('welcome.food5')</h5>
                             <span>Categorie</span>
                         </div>
                     </a>
@@ -104,7 +104,7 @@
                     <a href="#">
                         <img alt="Pic" src="{{asset('storage/img/landscape-3.jpg')}}">
                         <div class="title">
-                            <h5 class="uppercase mb0">Preparat 1</h5>
+                            <h5 class="uppercase mb0">@lang('welcome.food6')</h5>
                             <span>Categorie</span>
                         </div>
                     </a>
@@ -120,7 +120,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h3 class="uppercase mb0">Unde ne găsești?</h3>
+                <h3 class="uppercase mb0">@lang('welcome.where to find')</h3>
             </div>
         </div>
     </div>
