@@ -5,11 +5,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-5">
-                <h4 class="uppercase">Contacteaza-ne</h4>
+                <h4 class="uppercase">@lang('contact.Contact us')</h4>
                 <p>
-                    Doresti sa iei legatura cu noi? Iti punem la dispozitie mai multe modilitati de a ne contacta.
-                    Foloseste numarul de telefon
-                    de mai jos, formularul de contact sau adresa de email Le Monelline.
+                    @lang('contact.Contact Desc')
                 </p>
                 <hr>
                 <p>
@@ -21,18 +19,18 @@
                 <p>
                     <strong>E:</strong> contact@lemonelline.com
                     <br>
-                    <strong>P:</strong> +0356 - xxx - xxx
+                    <strong>P:</strong> +40 784 270 210
                     <br>
                 </p>
             </div>
             <div class="col-sm-6 col-md-5 col-md-offset-1">
                 <form class="form-email" data-success="Multumim pentru mesaj! Te vom contacta cat de curand."
                     data-error="Te rugam sa completezi corect toate campurile.">
-                    <input type="text" class="validate-required" name="name" placeholder="Numele tau">
+                    <input type="text" class="validate-required" name="name" placeholder="@lang('contact.Name')">
                     <input type="text" class="validate-required validate-email" name="email"
-                        placeholder="Adresa de email pentru contact">
-                    <textarea class="validate-required" name="message" rows="4" placeholder="Mesajul tau"></textarea>
-                    <button type="submit">Trimite mesajul</button>
+                        placeholder="@lang('contact.Mail')">
+                    <textarea class="validate-required" name="message" rows="4" placeholder="@lang('contact.Message')"></textarea>
+                    <button type="submit">@lang('contact.Send')</button>
                 </form>
             </div>
         </div>

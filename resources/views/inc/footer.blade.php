@@ -30,6 +30,9 @@
                     <li><a href="{{url('/faq')}}">
                             <h5 class="uppercase mb16 fade-on-hover">@lang('footer.faq')</h5>
                         </a></li>
+                        <li><a href="{{url('/login')}}">
+                            <h5 class="uppercase mb16 fade-on-hover">@lang('footer.Login')</h5>
+                        </a></li>
                 </ul>
             </div>
 

@@ -50,7 +50,7 @@
 
 <nav>
 
-    <div class="nav-bar bg-dark">
+    <div class="nav-bar bg-dark" style="z-index: 5">
         <div class="module left">
             <a href="{{url('/')}}">
                 <img class="logo-light" alt="Foundry" height="80%" src="{{asset('storage/img/Logo_LM.svg')}}">
@@ -93,6 +93,26 @@
                             </li> --}}
                         </ul>
                     </li>
+
+                    @auth
+                    <li class="has-dropdown">
+                        <a href="#" class="text-white">
+                            {{Auth::user()->name}}
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="{{url("/home")}}" class="foodpanda-text">
+                                    Administrare
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{url("/logout")}}" class="foodpanda-text">
+                                    Decontectare
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    @endauth
                 </ul>
             </div>
 

@@ -13,6 +13,7 @@
 
 Auth::routes();
 
+
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
 
 Route::get('/', 'PagesController@welcome');
@@ -20,5 +21,12 @@ Route::get('/faq', 'PagesController@faq');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/about-us', 'PagesController@about');
 
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/menu', 'PagesController@menu');
+
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('products', 'ProductsController');
+    Route::get('/home', 'HomeController@index')->name('home');
+    
+});

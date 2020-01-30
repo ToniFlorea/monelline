@@ -1,9 +1,47 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+
+<div class="main-container">
+    <section class="cover fullscreen image-bg overlay">
+        <div class="background-image-holder">
+            <img alt="image" class="background-image" src="{{asset('storage/img/LEMO.png')}}" />
+        </div>
+        <div class="container v-align-transform" >
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+                    <div class="feature bordered text-center">
+                        <h4 class="uppercase">Autentificare</h4>
+                        <form class="text-left" action="{{ route('login') }}" method="post">
+                            @csrf
+                            <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Adresa de email">
+
+                                @error('email')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="Parola">
+
+                                @error('password')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            <input type="submit" value="Autentificare" />
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+</div>
+{{-- <div class="container" style="margin: 30px auto">
+    <div class="row">
+        <div class="col-md-8" style="margin: 0 auto; ">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
 
@@ -69,5 +107,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection
