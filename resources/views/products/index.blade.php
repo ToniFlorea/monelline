@@ -1,12 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+
+
 <section>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
+                @if(session('success'))
+                <div class="alert alert-success">
+                    {{session('success')}}
+                </div>
+                @endif
                 <h4 class="uppercase mb80">Administrare meniu</h4>
-                <button type="submit">Adaugă un produs nou</button></form>
+                <form action="{{url('/products/create')}}">
+                    <button type="submit">Adaugă un produs nou</button></form>
                 <hr>
                 <div class="container">
                     <div class="row">
@@ -25,7 +33,7 @@
 
                                                 <div class="col-md-6 mt-4">
                                                     <div class="card">
-                                                        <img src="{{asset('storage/img/produse/Monellinenere29ron.jpg')}}"
+                                                        <img src="{{asset('storage/cover_images/'.$product->cover_image)}}"
                                                             class="img-fluid" alt="">
                                                         <div class="card-content">
                                                             <div class="row">
@@ -42,12 +50,22 @@
                                                                     <p>{{$product->desc_en}}</p>
                                                                 </div>
                                                             </div>
-                                                            <h5 class="text-center">Pret: <b>{{$product->price}} lei</b>
+                                                            <h5 class="text-center">Pret: <b>{{$product->price}}</b>
                                                             </h5>
                                                             <hr>
                                                             <div class="button-wrapper">
-                                                                <button class="btn btn-warning">Editeaza</button>
-                                                                <button class="btn btn-danger">Sterge</button>
+                                                                <a href="{{url('/products/'.$product->id.'/edit/')}}">
+                                                                    <button type="submit"
+                                                                        class="btn btn-warning">Editeaza</button></a>
+                                                                <form
+                                                                    action="{{ action('ProductsController@destroy', $product->id) }}"
+                                                                    method="post">
+                                                                    @csrf
+                                                                    <input name="_method" type="hidden" value="DELETE">
+
+                                                                    <button type="submit"
+                                                                        class="btn btn-danger">Sterge</button>
+                                                                </form>
                                                             </div>
                                                         </div>
                                                     </div>

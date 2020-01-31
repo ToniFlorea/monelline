@@ -20861,3 +20861,27 @@ body {
   background-color: rgba(206, 206, 206, 0.2);
   padding: 20px;
 }
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.text-dark {
+  color: black !important;
+}
+
+input[type=file] {
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}

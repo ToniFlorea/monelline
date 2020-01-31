@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use Illuminate\Support\Facades\Storage;
 
 class ProductsController extends Controller
 {
@@ -25,7 +26,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        return view('products.create');
     }
 
     /**
@@ -36,7 +37,25 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
+        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+        $extension = $request->file('cover_image')->getClientOriginalExtension();
+        $fileNameToStore = $filename.'_'.time().'.'.$extension;
+        $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+
+        $product = new Product();
+        $product->name_ro = $request->input('name_ro');
+        $product->name_en = $request->input('name_en');
+        $product->desc_ro = $request->input('desc_ro');
+        $product->categ = $request->input('categ');
+        $product->desc_en = $request->input('desc_en');
+        $product->cover_image = $fileNameToStore;
+        $product->price = $request->input('price');
+        $product->save();
+
+        return redirect('/products')->with('success', 'Produs adăugat cu succes');
+        //$post->price = $request->input("");
     }
 
     /**
@@ -58,7 +77,10 @@ class ProductsController extends Controller
      */
     public function edit($id)
     {
-        //
+        
+
+        $product = Product::find($id);
+        return view('products.edit')->with('product', $product);
     }
 
     /**
@@ -70,7 +92,31 @@ class ProductsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        if($request->hasFile('cover_image'))
+        {
+
+        $filenameWithExt = $request->file('cover_image')->getClientOriginalImage();
+        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+        $extension = $request->file('cover_image')->getClientOriginalExtension();
+        $fileNameToStore = $filename.'_'.time().'.'.$extension;
+        $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+        }
+
+        $product = Product::find($id);
+        $product->name_ro = $request->input('name_ro');
+        $product->name_en = $request->input('name_en');
+        $product->desc_ro = $request->input('desc_ro');
+        $product->categ = $request->input('categ');
+        $product->desc_en = $request->input('desc_en');
+        if($request->hasFile('cover_image'))
+        {
+            $product->cover_image = $fileNameToStore;
+        }
+        $product->price = $request->input('price');
+        $product->save();
+
+        return redirect('/products')->with('success', 'Produs actualizat cu succes');
     }
 
     /**
@@ -81,6 +127,10 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = Product::find($id);
+        Storage::delete('public/cover_images/'.$product->cover_image);
+        $product->delete();
+        return redirect('/products')->with('success', 'Produs șters cu succes');
+
     }
 }

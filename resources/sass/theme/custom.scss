@@ -101,3 +101,29 @@ body {
 //     left: 0;
 //     height: 100%;
 // }
+
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  .text-dark
+  {
+      color: rgba(0, 0, 0, 1) !important;
+  }
+
+  input[type="file"] { 
+    z-index: -1;
+    position: absolute;
+    opacity: 0;
+  }

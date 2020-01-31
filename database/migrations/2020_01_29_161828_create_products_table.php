@@ -17,9 +17,11 @@ class CreateProductsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name_ro');
             $table->string('desc_ro');
+            $table->string('categ');
             $table->string('name_en');
             $table->string('desc_en');
-            $table->float('price');
+            $table->string('price');
+            $table->string('cover_image');
             $table->timestamps();
         });
     }
